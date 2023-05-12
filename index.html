@@ -10,19 +10,101 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+      font-size: var(--f15);
+      background-color: var(--Light-gray);
+
+    }
+    :root{
+     --White: hsl(0, 0%, 100%);
+     --Light-gray: hsl(212, 45%, 89%);
+     --Grayish-blue: hsl(220, 15%, 55%);
+     --Dark-blue:hsl(218, 44%, 22%);
+     --f15:15px;
+
+    
+     
+    }
+
+    main{
+      height: 100vh;
+    }
+
+    .box{
+      width: 300px;
+      height: 480px;
+      margin-top: 100px;
+      padding: 18px 20px;
+      border-radius: 30px;
+      background-color: var(--White);
+    }
+
+   section{
+    display: flex;
+    justify-content: center;
+   }
+
+   .qr-image{
+    width: 100%;
+    border-radius: 20px;
+   }
+
+   .card-header{
+    color: var(--Dark-blue);
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+   }
+
+   .text{
+    font-weight: 400;
+    color: var(--Grayish-blue);
+    font-size: 15px;
+    margin-top: 1%;
+    
+   }
+
+   .content{
+    text-align: center;
+   }
+
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 10%;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
+  <main>
+    <section>
+      <article class="box">
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        <img src="images/image-qr-code.png" class="qr-image" alt="">
+
+      <div class="content">
+        <h1 class="card-header">  Improve your front-end  skills by building projects</h1>
+
+        <p class="text"> Scan the QR code to visit Frontend Mentor and take your coding skills to <br> the next level </p>
+      </div>
+        
+      </article>
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Hüseyin Çetinkoz</a>.
+    </div>
+  </main>
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
